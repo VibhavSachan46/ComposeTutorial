@@ -3,18 +3,20 @@ package com.vibhav.composetutorial
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.*
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Surface
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.alpha
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.Color.Companion.Black
 import androidx.compose.ui.graphics.Color.Companion.Blue
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight.Companion.Black
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
@@ -41,15 +43,66 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun Greeting(name: String) {
-    Text(
-        text = "Hello $name!",
-        color = Color.Blue,
-        fontSize = 100.sp,
-        modifier = Modifier
-            .background(Color.Gray)
-            .padding(16.dp)
-            .background(Color.Red)
-    )
+//    Image(
+//        painter = painterResource(id = R.drawable.ic_launcher_foreground),
+//        contentDescription = null,
+//        modifier = Modifier.background(Color.Black)
+//    )
+    
+//    Column(
+//        horizontalAlignment = Alignment.CenterHorizontally,
+//        verticalArrangement = Arrangement.Center,
+//        modifier = Modifier
+//    ) {
+//        Text(
+//            text = "Hello $name!",
+//            color = Color.Blue,
+//            fontSize = 30.sp,
+//        )
+//
+//        Text(
+//            text = "Good buy",
+//            color = Color.Blue,
+//            fontSize = 30.sp,
+//        )
+//    }
+
+//    Row(
+//        horizontalArrangement = Arrangement.End,
+//        modifier = Modifier
+//            .size(400.dp)
+//    ) {
+//        Text(
+//            text = "Hello $name!",
+//            color = Color.Blue,
+//            fontSize = 30.sp,
+//        )
+//
+//        Text(
+//            text = "Good buy",
+//            color = Color.Blue,
+//            fontSize = 30.sp,
+//        )
+//    }
+
+//    Box(
+//        modifier = Modifier
+//            .size(400.dp),
+//    ) {
+//        Text(
+//            text = "Hello $name!",
+//            color = Color.Blue,
+//            fontSize = 30.sp,
+//            modifier = Modifier.align(Alignment.Center)
+//        )
+//
+//        Text(
+//            text = "Good buy",
+//            color = Color.Blue,
+//            fontSize = 30.sp,
+//        )
+//    }
+
 }
 
 @Preview(showBackground = true)
